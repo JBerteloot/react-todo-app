@@ -15,7 +15,7 @@ export default props => {
     <div>
       <ul>
         <li className="task">
-          <button type="checkbox" id="myCheck" className="completed" onClick={completeItem}><MaterialIcon icon="check_circle_outline"/></button>
+          <input type="checkbox" id="myCheck" className="completed" onClick={completeItem}/>
           <p>{props.item}</p>
           <button className="delete" onClick={deleteItem}><MaterialIcon icon="delete"/></button>
         </li>

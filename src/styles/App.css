@@ -67,9 +67,12 @@ main {
 }
 
 .completed {
-  width: 30px;
-  border-radius: none;
-  outline: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  border: 2px solid rgb(26, 25, 25);
+  
+
 }
 
 .task p {
@@ -87,16 +90,12 @@ main {
   background-color:  antiquewhite;  
 }
 
-.delete i, .completed i {
+.delete i {
   padding-top: 5px;
 }
 
 .delete i:hover {
   color: red;
-}
-
-.completed i:hover {
-  color: green;
 }
 
 ul, li {

@@ -16,7 +16,7 @@ export default props => {
 
 
   return (
-    <main>
+    <form>
       <div id='adding'>
           <input 
             type='text' 
@@ -24,13 +24,13 @@ export default props => {
             onChange={e => setItem(e.target.value)} 
             placeholder='Enter a task'>
           </input>
-          <button id='submit' onClick={createItem}>Add to list</button>
+          <button id='submit' onClick={createItem}></button>
       </div>
       <div className="list">
           {items.map((item, id) => (
             <Item key={'item' + id} {...item}/>
           ))}
       </div>
-    </main>
+    </form>
   )
 }
