@@ -5,15 +5,17 @@ import { Provider } from 'react-redux'
 import store from '../store'
 
 import Form from './Form'
-//import Footer from './Footer'
+
 
 export default props => {
   return (
     <Provider store={store}>
       <div id='container'>
-        <h1>Get it done!</h1>
+        <header>
+         <h1>todos</h1>
+        </header>
         <Form />
-        {/* <Footer /> */}
+        <footer>Brought to you by "That was painful" &copy;</footer>
       </div>
     </Provider>
   )
