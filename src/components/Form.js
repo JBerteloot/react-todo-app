@@ -9,6 +9,7 @@ export default props => {
   const filter = useSelector(appState => appState.filter)
   const count = useSelector(appState => appState.items.filter(item => !item.checked).length)
   const allItemsCount = useSelector(appState => appState.items.length)
+  
   const items = useSelector(appState => {
     const filter = appState.filter
     
@@ -26,7 +27,6 @@ export default props => {
     e.preventDefault()
     setItem('')
     create(item)
-    console.log(create)
   }
 
   return (

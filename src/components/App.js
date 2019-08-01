@@ -15,7 +15,7 @@ export default props => {
          <h1>todos</h1>
         </header>
         <Form />
-        <footer>Brought to you by "That was painful" &copy;</footer>
+        <footer>Brought to you by "Losing your mind over small tyoes!" &copy;</footer>
       </div>
     </Provider>
   )

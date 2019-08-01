@@ -6,7 +6,7 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case 'ADD_TASK':
-      return {...state, items:[...state.items, action.payload]}
+      return {...state, items:[action.payload, ...state.items]}
 
     case 'REMOVE_TASK':
       return {...state, items: state.items.filter(item => action.payload !== item.id)}
